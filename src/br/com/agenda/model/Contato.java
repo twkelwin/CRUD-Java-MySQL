@@ -2,7 +2,7 @@ package br.com.agenda.model;
 
 import java.util.Date;
 
-public class agenda {
+public class Contato {
 
 	private int id;
 	private String nome;
