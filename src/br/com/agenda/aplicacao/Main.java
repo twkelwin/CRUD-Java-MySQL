@@ -23,6 +23,7 @@ public class Main {
 		contato2.setDataCadastro(new Date());
 
 		contatoDao.save(contato2);
+		
 	}
 
 }
