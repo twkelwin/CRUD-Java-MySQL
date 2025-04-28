@@ -18,6 +18,14 @@ public class ConnectionFactory {
 
 		return connection;
 	}
-	
-	
+
+	public static void main(String[] args) throws Exception {
+		// recuperar uma conexão com banco de dados
+		Connection con = createConnectionToMySQL();
+
+		// testar se a conexão é nula
+		if (con != null)
+			System.out.println("Conexão obtida com sucesso!");
+		con.close();
+	}
 }
