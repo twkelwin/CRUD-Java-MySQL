@@ -16,20 +16,20 @@ public class Main {
 		contato.setDataCadastro(new Date());
 
 		contatoDao.save(contato);
-		
+
 		Contato contato2 = new Contato();
 		contato2.setNome("kelwinho");
 		contato2.setIdade(56);
 		contato2.setDataCadastro(new Date());
 
 		contatoDao.save(contato2);
-		
-		//vizualização dos registros do banco de dados (TODOS)
-		
+
+		// vizualização dos registros do banco de dados (TODOS)
+
 		for (Contato c : contatoDao.getContatos()) {
 			System.out.println("Contatos: " + c.getNome());
 		}
-		
+
 	}
 
 }
