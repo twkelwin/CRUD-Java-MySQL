@@ -24,6 +24,12 @@ public class Main {
 
 		contatoDao.save(contato2);
 		
+		//vizualização dos registros do banco de dados (TODOS)
+		
+		for (Contato c : contatoDao.getContatos()) {
+			System.out.println("Contatos: " + c.getNome());
+		}
+		
 	}
 
 }
