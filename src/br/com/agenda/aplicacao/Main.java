@@ -11,14 +11,14 @@ public class Main {
 		ContatoDAO contatoDao = new ContatoDAO();
 
 		Contato contato = new Contato();
-		contato.setNome("Lider");
+		contato.setNome("Joao");
 		contato.setIdade(44);
 		contato.setDataCadastro(new Date());
 
 		contatoDao.save(contato);
 		
 		Contato contato2 = new Contato();
-		contato2.setNome("rocha");
+		contato2.setNome("kelwinho");
 		contato2.setIdade(56);
 		contato2.setDataCadastro(new Date());
 
