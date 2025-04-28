@@ -12,7 +12,7 @@ public class ContatoDAO {
 
 	public void save(Contato contato) {
 
-		String sql = "INSERT INTO contatos(nome, idade, datacadastro VALUES (?, ? , ?)";
+		String sql = "INSERT INTO contatos(nome, idade, datacadastro) VALUES (?, ? , ?)";
 
 		Connection conn = null;
 		PreparedStatement pstm = null;
