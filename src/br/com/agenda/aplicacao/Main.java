@@ -17,21 +17,22 @@ public class Main {
 
 		contatoDao.save(contato);
 
-		//Atualizar o contato
+		// Atualizar o contato
 		Contato c1 = new Contato();
 		c1.setNome("Joao gabriel Silva");
 		c1.setIdade(45);
 		c1.setDataCadastro(new Date());
-		c1.setId(8); //é o ID do banco de dados
-		
+		c1.setId(8); // é o ID do banco de dados
+
 		contatoDao.update(c1);
 
+		// deletar o contato pelo ID
+		contatoDao.deleteByID(1);
 		// vizualização dos registros do banco de dados (TODOS)
 
 		for (Contato c : contatoDao.getContatos()) {
 			System.out.println("Contatos: " + c.getNome());
 		}
-		
 
 	}
 
